@@ -5,6 +5,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 // import connectDB from './config/db.js';
 import promptRoutes from './routes/promptRoutes.js';
+import generatorRoutes from './routes/generatorRoutes.js';
 
 // Load environment variables
 dotenv.config();
@@ -24,6 +25,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // API Routes
 app.use('/api/prompts', promptRoutes);
+app.use('/api/generator', generatorRoutes);
 
 // Basic route for testing
 app.get('/api/test', (req, res) => {

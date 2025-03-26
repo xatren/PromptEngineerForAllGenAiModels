@@ -1,20 +1,20 @@
 import { useState } from 'react';
 
 const aiModels = [
-  { id: 'gemini-pro', name: 'Google Gemini Pro', description: 'Google\'s advanced reasoning model with great performance.' },
-  { id: 'gemini-1.5-pro', name: 'Google Gemini 1.5 Pro', description: 'Google\'s newer multimodal model with extended context.' },
-  { id: 'gpt-4', name: 'ChatGPT (GPT-4)', description: 'OpenAI\'s most advanced model with strong reasoning capabilities.' },
-  { id: 'gpt-3.5-turbo', name: 'ChatGPT (GPT-3.5)', description: 'Powerful and cost-effective OpenAI model.' },
-  { id: 'claude-3-opus', name: 'Claude 3 Opus', description: 'Anthropic\'s most capable model for complex tasks.' },
-  { id: 'claude-3-sonnet', name: 'Claude 3 Sonnet', description: 'Balanced Claude model for everyday use.' },
-  { id: 'llama-3', name: 'Meta LLaMA 3', description: 'Meta\'s open-source foundational language model.' },
+  { id: 'gemini-pro', name: 'Google Gemini Pro', description: 'Google\'un gelişmiş akıl yürütme modeli, ücretsiz kullanılabilir.' },
+  { id: 'gemini-1.5-pro', name: 'Google Gemini 1.5 Pro', description: 'Google\'un daha yeni çok modlu modeli, geniş bağlam desteği.' },
+  { id: 'gpt-4', name: 'ChatGPT (GPT-4)', description: 'OpenAI\'ın güçlü akıl yürütme yeteneklerine sahip en gelişmiş modeli.' },
+  { id: 'gpt-3.5-turbo', name: 'ChatGPT (GPT-3.5)', description: 'Maliyet-etkin OpenAI modeli.' },
+  { id: 'claude-3-opus', name: 'Claude 3 Opus', description: 'Anthropic\'in en yetenekli modeli, karmaşık görevler için.' },
+  { id: 'claude-3-sonnet', name: 'Claude 3 Sonnet', description: 'Günlük kullanım için dengeli Claude modeli.' },
+  { id: 'llama-3', name: 'Meta LLaMA 3', description: 'Meta\'nın açık kaynak temel dil modeli.' },
 ];
 
 const ModelSelector = ({ selectedModel, setSelectedModel }) => {
   return (
     <div className="card mb-6">
       <h2 className="text-xl font-bold mb-4">AI Modelini Seçin</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {aiModels.map((model) => (
           <div
             key={model.id}

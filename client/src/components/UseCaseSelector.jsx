@@ -11,7 +11,7 @@ const UseCaseSelector = ({ selectedUseCase, setSelectedUseCase }) => {
   return (
     <div className="card mb-6">
       <h2 className="text-xl font-bold mb-4">Kullanım Senaryonuzu Seçin</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {useCases.map((useCase) => (
           <div
             key={useCase.id}
