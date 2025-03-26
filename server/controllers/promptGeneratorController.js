@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
 // Initialize the Google Generative AI with API key
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || 'AIzaSyBHZMvCtITa7gflszHCh1-TNcbuQPkRyEs');
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || 'apikey');
 
 // Map of model names to their API identifiers
 const modelMap = {
